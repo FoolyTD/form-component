@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+/* Form Styling */
+
+* {
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.form-container {
+    display: grid;
+}
+h1 {
+    font-size: 1.7em;
+}
+
+.form-title {
+    text-align: center;
+}
+
+.double-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row-item {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.single-row {
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.single-row-item {
+    width: 100%;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    width: 161px;
+    align-items: center;
+}
+form input {
+    font-size: 1.2em;
+    border-radius: 10px;
+    height: 40px;
+    padding-left: 10px; 
+    border: 2px solid rgb(0,0,0,.15);
+}
+/* highlight input box with blue text when active */
+form input:focus {
+    box-shadow: 2px 2px 5px #cce4f7;
+    border: 5px solid #cce4f7;
+}
+
+/* styling for link */
+.link {
+    color:#4890cd;
+}
+
+/* Checkbox container */
+.checkbox-container {
+    margin-top: -10px;
+    display: flex;
+}
+label {
+    font-weight: 900;
+}
+.agree-text {
+    font-size: 12px;
+}
+
+/* Button Styling */
+.btn {
+    font-size: 1.2em;
+    color: #fff;
+    width: 252px;
+    height: 46px;
+    border-radius: 10px;
+    border: 2px solid rgb(0,0,0,.15);
+
+}
+button:hover {
+    background-color: bisque;
+    cursor: pointer;
+    color: #000;
+}
+button:active {
+    background-color: bisque;
+    color: bisque;
+}
+
+.btn-secondary {
+    background-color: #62bc62;
+}
+.btn-primary {
+    background-color: #4890cd;
+}
+.btn-container {
+    margin-top: -10px;
+}
+.small-text {
+    font-size: 10px;
+    padding: 2.1px;
+}
+
+@media only screen and (min-width: 600px){
+    .form-container {
+        margin: 15%;
+        margin-top: 0;
+    }
+	/*small smartphones [350px -> 600px]*/
+}
+@media only screen and (min-width: 800px){
+    .form-container {
+        margin: 20%;
+        margin-top: 0;
+    }
+	/*Big smartphones [600px -> 800px]*/
+}
+@media only screen and (min-width: 950px){
+    .form-container {
+        margin: 30%;
+        margin-top: 0;
+    }
+	/*tablets [800px -> 950px]*/
+}
+@media only screen and (min-width: 1350px){
+    .form-container {
+        margin: 35%;
+        margin-top: 0;
+    }
+	/*laptops [800px -> 950px]*/
+}
+@media only screen and (min-width: 1820px){
+    .form-container {
+        margin: 45%;
+        margin-top: 0;
+    }
+	/*Desktops [800px -> 950px]*/
+}
